@@ -23,3 +23,8 @@ git checkout master
 git checkout <hash>
 git checkout -b <branch_name>
 ```
+
+###删除account的历史记录
+```sh
+git credential-osxkeychain erase
+```
