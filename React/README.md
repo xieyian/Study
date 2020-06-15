@@ -29,3 +29,30 @@ npm start   //start
 
 - Create react component // in index.js
 - Take react component and show it on the screen  // in jindex.js
+
+## HTML to JSX
+- style:
+  ```HTML
+  <div style="background-color: red;"> </div>
+  ```
+  ```JSX
+  <div style={{backgroundColor:'red'}}> </div>
+  ```
+- class and classname:
+  ```HTML
+  <div class="top"></div>
+  ```
+  ```JSX
+  <div className="top"></div>
+  ```
+- can easy referencing to javascript vairable
+  - it can't reference to javascript object:
+    ```Javascript
+    const a = { test: "hello world!"};
+    <div>{a}</div>
+    ```
+  - but it can reference to:
+    ```Javascript
+    const a = { test: "hello world!"};
+    <div>{a.test}</div>
+    ```

@@ -37,7 +37,7 @@
 - 不同的字体可能导致乱码: "$quot;" 
 
 ## links
-```html
+```HTML
 <a href="www.facebook.com" target="_blank" title="鼠标放在上面显示的标签">click here</a>
 ```
 - href can use for: 
@@ -51,7 +51,7 @@
   - _top
 
 ## image
-```html
+```HTML
 <imag src="abc.jpg" width="100px" height="100px"></imag>
 ```
 ### src:
