@@ -30,7 +30,7 @@ npm start   //start
 - Create react component // in index.js
 - Take react component and show it on the screen  // in jindex.js
 
-## HTML to JSX
+## HTML to JSX <in jsx file>
 - style:
   ```HTML
   <div style="background-color: red;"> </div>
@@ -56,3 +56,51 @@ npm start   //start
     const a = { test: "hello world!"};
     <div>{a.test}</div>
     ```
+
+##  input Semantic Ui <in components file>
+```Html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+```
+
+## install faker.js 创建虚假信息图片头像。。。
+```sh 
+npm install --save faker
+```
+
+## Create Component <in components file>
+1. create xxx.js in src
+2. inside xxx.js should have 
+   - ```import React from 'react';```
+   - the code you need 
+   - ```export default CommentDetail;```
+3. to use it in index.js in src
+   - ``` import CommentDetail from './xxx';```
+   - use by ```<xxx  />```
+
+
+# props 用来传送更改变量
+- props （可以改变传送不同的变量）例如传送不同的名字
+  - 在 xxx.js中 
+    ```JSX
+    const xxx = (props) => {
+      return props.name;
+    };
+    ```
+  - 在index.js中
+    ```jsx
+    <xxx name="Andy or Lisa..." /> 
+    ```
+- children (可以代替div, h1... 使用）
+  - 在 xxx.js中 
+    ```JSX
+    const xxx = (props) => {
+      return <div className="aa bb cc ....">{props.children}</div>
+    };
+    ```
+  - 在index.js中
+    ```jsx
+    <div className="aa bb cc ....">{<h1></h1>....一堆东西}</div>
+    //变成
+    <xxx>{<h1></h1>....一堆东西}</xxx>
+    ```
+  
