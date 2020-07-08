@@ -1,4 +1,4 @@
-Javascript
+# Javascript
 
 1. console.log("aaa")
 //print
@@ -368,3 +368,16 @@ cat.age = 2
 ```
 
 
+# Javascript with HTML and CSS
+- ```document.getElementById("aaa").value```
+  - means get the value in id called "aaa", 应用在读取
+  
+- ```document.getElementById("bbb").innerHTML = abc```
+  - 把abc的内容转换为HTML格式
+
+- ```var aaabbbccc = document.querySelector("#ccc").textContent```
+- ```aaabbbccc += "!!!"```
+- ```document.querySelector("#ccc").textContent = aaabbbccc```
+  - 读取id为ccc中的内容并且 += ！！！
+
+- in HTML: ```<script src="scipt.js"></script>```can place on the top if put the js code into ```dopcument.addEventListener("DOMContentLoaded, function(event){.......});```
