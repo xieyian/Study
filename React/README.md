@@ -104,3 +104,24 @@ npm install --save faker
     <xxx>{<h1></h1>....一堆东西}</xxx>
     ```
   
+  # Class Components and Function Components
+  ## states --- seasons react project
+  - state is a js object that contains data relevant to a component
+  - state can only be updated using the function 'setState'
+
+  state必须有下面两个function
+  ```
+   constructor(props) {
+        super(props);
+        //must use this.state 来定义需要的variable。
+        this.state = {a: 1};
+    }
+
+    // have to define render!!
+    render() {
+    }
+  ```
+
+  # Hooks
+
+  # Redux
