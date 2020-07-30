@@ -108,6 +108,7 @@ npm install --save faker
   ## states --- seasons react project
   - state is a js object that contains data relevant to a component
   - state can only be updated using the function 'setState'
+  - use ```setState()``` to update value
 
   state必须有下面两个function
   ```
@@ -122,6 +123,33 @@ npm install --save faker
     }
   ```
 
+  ## lifecycle
+  ``` 
+  componentDidMount() {} //加载运行一次
+  componentDidUpdate() {} //update(setState())运行一次 之前会运行 render()
+  ```
+
+  in componment can use default props for the function: 
+  ```componentName.defaultProps{ ..... };```
+  
   # Hooks
 
   # Redux
+
+  # user input and search
+
+  ## event handlers
+  user clicks on something 
+  -```onClick(){...}```
+  user change text in an input 
+  -```onChange(){...}```
+  user submit a form 
+  -```onSubmit(){...}```
+
+  ## Controlled and Uncontrolled
+  dont let the page reflash after press RETURN
+  ```event.preventDefault();```
+
+  ## use arrow function to fix the error (cannot read property '...' of underfined)
+
+  ## Axios and Fetch
