@@ -151,5 +151,11 @@ npm install --save faker
   ```event.preventDefault();```
 
   ## use arrow function to fix the error (cannot read property '...' of underfined)
+  ## arrow function
 
   ## Axios and Fetch
+
+  ### async and await
+
+  ## React Refs
+  give access to a single DOM element
